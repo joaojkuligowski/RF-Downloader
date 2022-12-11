@@ -20,8 +20,9 @@ axios.get(url).then(response => {
                 const zip = new AdmZip(`./temp/${linkText}`);
                 zip.extractAllTo(`./temp`, true);
             });
+            //APOS EXTRAIR, DELETAR O ZIP
         });
-        console.log('Baixado e extraido' + linkText);
+        console.log('Baixado e extraido: ' + linkText);
 });
     const endtime = new Date();
     console.log('Tempo total: ' + (endtime - nowtime) / 1000 + 's');
