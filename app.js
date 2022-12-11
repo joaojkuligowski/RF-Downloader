@@ -22,7 +22,7 @@ axios.get(url).then(response => {
             });
             //APOS EXTRAIR, DELETAR O ZIP
         });
-        console.log('Baixado e extraido: ' + linkText);
+        console.log('Downloading: ' + linkText);
 });
     const endtime = new Date();
     console.log('Tempo total: ' + (endtime - nowtime) / 1000 + 's');
